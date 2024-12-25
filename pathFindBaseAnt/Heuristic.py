@@ -208,7 +208,7 @@ class ACO(baseAlgorithm):
                 self.way_len_best = way_length_list[a_1]
                 self.way_data_best = copy.deepcopy(self.success_way_list[a_1])
             if show_process:
-                print('第', i, '代:  成功寻路个数:', len(self.success_way_list), end='')
+                print('第', i, '次迭代:  成功寻路个数:', len(self.success_way_list), end='')
                 print('平均长度:', np.average(way_length_list), '最短:', np.min(way_length_list))
 
 
