@@ -32,9 +32,9 @@ for i in range(len(startPoints)):
     pathList.insert(0, path)
     # gridFig.save('output/result.jpg')  # 保存结果栅格图数据为result.jpg
     # gridFig.show()
-    iterationFig = IterationGraph(data_list=[aco.generation_aver, aco.generation_best],  # 绘制数据: 每代平均、每代最优路径信息
+    iterationFig = IterationGraph(data_list=[aco.generation_aver],  # 绘制数据: 每代平均、每代最优路径信息
                                   style_list=['--r', '-.g'],  # 线型 (规则同plt.plot()中的线型规则)
-                                  legend_list=['每代平均', '每代最优'],  # 图例 (可选参数，可以不写)
+                                  legend_list=['每代平均'],  # 图例 (可选参数，可以不写)
                                   xLabel='迭代次数',  # x轴标签，默认“x”
                                   yLabel='路径长度'  # y轴标签，默认“y”
                                   )  # 初始化迭代图绘制模块
